@@ -21,4 +21,10 @@ RSpec.describe 'Caeser Cipher' do
         end
     end
     
+    context 'when asked to wrap from Z to A' do
+        it 'wraps the letters correctly' do
+            expect(caeser_cipher('zzz', 5)).to eq('eee')
+        end
+    end
+
 end
