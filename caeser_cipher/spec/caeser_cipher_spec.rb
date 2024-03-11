@@ -8,5 +8,11 @@ RSpec.describe 'Caeser Cipher' do
             expect(caeser_cipher('aaa', 1)).to eq('bbb')
         end
     end
+
+    context 'with uppercase letters' do
+        it 'returns the correct output' do
+            expect(caeser_cipher('YYY', 1)).to eq('ZZZ')
+        end
+    end
     
 end
