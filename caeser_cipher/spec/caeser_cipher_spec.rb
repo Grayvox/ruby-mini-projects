@@ -29,7 +29,7 @@ RSpec.describe 'Caeser Cipher' do
 
     context 'when a sentence is provided' do
         it 'returns the correct output' do
-            expect(caeser_cipher("Never gonna give you up", 5)).to eq('Error! All elements must be alphabetical.')
+            expect(caeser_cipher('Never gonna give you up', 5)).to eq('Sjajw ltssf lnaj dtz zu')
         end
     end
 

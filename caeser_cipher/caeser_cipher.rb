@@ -24,3 +24,5 @@ def caeser_cipher(string, shift = 0)
     shiftedStr = stringArray.join
     shiftedStr
 end
+
+p caeser_cipher('Never gonna give you up', 5)
