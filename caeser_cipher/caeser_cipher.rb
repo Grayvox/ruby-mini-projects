@@ -10,10 +10,8 @@ def caeser_cipher(string, shift = 0)
         elementShift = element.ord + shift
 
         case element.ord
-        when 32..34
-        when 39
-        when 44..46
-        when 48..59
+        when 32..41
+        when 44..59
         when 63
             next element
         end
@@ -32,4 +30,4 @@ def caeser_cipher(string, shift = 0)
     shiftedStr
 end
 
-p caeser_cipher('Never gonna give you up', 5)
+p caeser_cipher('Never gonna give you up!', 5)
