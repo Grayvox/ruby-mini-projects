@@ -9,9 +9,16 @@ def caeser_cipher(string, shift = 0)
     stringArray = string.chars.map do |element| 
         elementShift = element.ord + shift
 
-        if element.ord == 32
-            next ' '
-        elsif elementShift > 90 && element == element.upcase
+        case element.ord
+        when 32..34
+        when 39
+        when 44..46
+        when 48..59
+        when 63
+            next element
+        end
+        
+        if elementShift > 90 && element == element.upcase
             difference = elementShift - 90
             elementShift = 64 + difference
         elsif elementShift > 122 && element == element.downcase
