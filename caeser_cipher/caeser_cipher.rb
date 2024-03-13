@@ -5,16 +5,16 @@ def caeser_cipher(string, shift = 0)
     # Catches unallowed characters
     if string =~ /[^a-z^A-Z^\s^!^"^'^.^,^0-9^?]/ then return 'Error! All elements must be alphabetical.' end
 
-    stringArray = string.chars.map do |element| 
-        elementShift = element.ord + shift
+    string_array = string.chars.map do |element| 
+        element_shift = element.ord + shift
         
         # Wraps letters from Z to A 
-        if elementShift > 90 && element == element.upcase
-            difference = elementShift - 90
-            elementShift = 64 + difference
-        elsif elementShift > 122 && element == element.downcase
-            difference = elementShift - 122
-            elementShift = 96 + difference
+        if element_shift > 90 && element == element.upcase
+            difference = element_shift - 90
+            element_shift = 64 + difference
+        elsif element_shift > 122 && element == element.downcase
+            difference = element_shift - 122
+            element_shift = 96 + difference
         end
 
         # Catches 'allowed characters' that are outside the alphabet. See ../caeser_cipher/README.md
@@ -24,10 +24,8 @@ def caeser_cipher(string, shift = 0)
             next element
         end
 
-        elementShift.chr
+        element_shift.chr
     end
-    shiftedStr = stringArray.join
-    shiftedStr
+    shifted_string = string_array.join
+    shifted_string
 end
-
-p caeser_cipher("Will? This, work??? I know it's bad...", 3)
