@@ -33,6 +33,12 @@ RSpec.describe 'Caeser Cipher' do
         end
     end
 
+    context 'when ALLOWED non-alphabetical characters are provided' do
+        it 'returns the correct output' do
+            expect(caeser_cipher('This! Is/ A. Horribly; Made: Test?', 5)).to eq('Ymnx! Nx/ F. Mtwwngqd; Rfij: Yjxy?')
+        end
+    end
+
     context 'when numbers are provided' do
         it 'returns an error' do
             expect(caeser_cipher('123', 5)).to eq('Error! All elements must be alphabetical.')
@@ -41,7 +47,7 @@ RSpec.describe 'Caeser Cipher' do
     
     context 'when random non-alphabetical characters are provided' do
         it 'returns an error' do
-            expect(caeser_cipher('&&&', 5)).to eq('Error! All elements must be alphabetical.')
+            expect(caeser_cipher('-%@', 5)).to eq('Error! All elements must be alphabetical.')
         end
     end
 

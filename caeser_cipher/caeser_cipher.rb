@@ -3,7 +3,7 @@ require 'pry-byebug'
 
 def caeser_cipher(string, shift = 0)
     # Catches unallowed characters
-    if string =~ /[^a-z^A-Z^\s^!^'^.^,^:^;^?]/ then return 'Error! All elements must be alphabetical.' end
+    if string =~ /[^a-z^A-Z^\s^!^'^.^,^:^;^?\/]/ then return 'Error! All elements must be alphabetical.' end
 
     string_array = string.chars.map do |element| 
         element_shift = element.ord + shift
