@@ -7,6 +7,6 @@ Solutions created by yours truly. :)
 ## Projects Finished
 
 - [x] Caeser Cipher
-- [ ] Sub Strings
+- [x] Sub Strings
 - [ ] Stock Picker
 - [ ] Bubble Sort
