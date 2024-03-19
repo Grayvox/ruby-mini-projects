@@ -28,4 +28,4 @@ def stock_picker(prices = [])
     results.push(sell_index)
 end
 
-p stock_picker([18, 19, 2, 4, 6, 18, 1])
+p stock_picker([22])
