@@ -8,5 +8,5 @@ Solutions created by yours truly. :)
 
 - [x] Caeser Cipher
 - [x] Sub Strings
-- [ ] Stock Picker
+- [x] Stock Picker
 - [ ] Bubble Sort
