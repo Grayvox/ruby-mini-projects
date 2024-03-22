@@ -9,4 +9,4 @@ Solutions created by yours truly. :)
 - [x] Caeser Cipher
 - [x] Sub Strings
 - [x] Stock Picker
-- [ ] Bubble Sort
+- [x] Bubble Sort
