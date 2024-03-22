@@ -20,4 +20,4 @@ def bubble_sort(array = [])
 
 end
 
-p bubble_sort([8, 9, 4, 7, 1, 3, 6, 2])
+p bubble_sort([8, 9, 10, 13, 5, 8, 6, 3, 1, 2, 0])
